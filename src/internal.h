@@ -456,6 +456,7 @@ struct _GLFWwindow
 struct _GLFWmonitor
 {
     char*           name;
+    void*           userPointer;
 
     // Physical dimensions in millimeters.
     int             widthMM, heightMM;
@@ -515,6 +516,7 @@ struct _GLFWjoystick
     int             hatCount;
     char*           name;
     char            guid[33];
+    void*           userPointer;
     _GLFWmapping*   mapping;
 
     // This is defined in the joystick API's joystick.h
